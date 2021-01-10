@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Nature Tours | Home</title>
+    <!--Ion Icons-->
+    <link href="https://unpkg.com/ionicons@4.5.10-0/dist/css/ionicons.min.css" rel="stylesheet">
+    <!--Google Fonts-->
+    <link href="https://fonts.googleapis.com/css?family=Nunito&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Aldrich&display=swap" rel="stylesheet">
+    <!--Our own stylesheet-->
+    <link rel="stylesheet" href="form.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <nav>
+                <div class="nav-brand">
+                    <a href="index2.html">
+                        <img src="logo.png" alt="investment-logo">
+                    </a>
+                </div>
+                <div class="menu-icons open">
+                    <i class="icon ion-md-menu"></i>
+                </div>
+                <ul class="nav-list">
+                    <div class="menu-icons close">
+                        <i class="icon ion-md-close"></i>
+                    </div>
+                    <li class="nav-item">
+                        <a href="index2.html" class="nav-link">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="services.html" class="nav-link">Services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">Contact</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <section class="hero">
+            <div class="form-container">
+                <form>
+                    <label class="form-item" for="fname">Voornaam</label>
+                    <input class="form-item" type="text" id="fname" name="firstname" placeholder="Uw naam...">
+                    <label class="form-item" for="lname">Achternaam</label>
+                    <input class="form-item" type="text" id="lname" name="lastname" placeholder="Uw naam...">
+                    <label class="form-item" for="maddress">E-mailadres</label>
+                    <input class="form-item" type="text" id="maddress" name="email" placeholder="Uw e-mail...">
+                    <label class="form-item" for="market">Markt waarin u wilt investeren</label>
+                    <select class="form-item" id="market" name="market">
+                        <option value="oil">Olie</option>
+                        <option value="realestate">Vastgoed</option>
+                        <option value="finance">Financiën</option>
+                    </select>
+                    <input class="form-item" type="submit" value="Verstuur">
+                </form>
+            </div>
+    </section>
+    <footer>
+        <div class="skyline-container">
+            <img class="seattle-pic" src="seattle-skyline.jpg" alt="Seattle skyline" />
+        </div>
+    </footer>
+    <script type="text/javascript" src="script.js"></script>
+</body>
+</html>
