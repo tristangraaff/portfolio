@@ -1,0 +1,403 @@
+body {
+  font-family: "Gil sans", sans-serif;
+  margin: 0;
+  color: white;
+  background: black;
+  box-sizing: border-box;
+  font-size: 1.5rem;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+h2,
+h3,
+p,
+small,
+figcaption {
+  margin-top: 0;
+}
+
+/*===============
+Typography
+=================*/
+
+h2,
+h3,
+p,
+a,
+figcaption,
+small {
+  text-align: center;
+}
+
+h2 {
+  font-size: 2.2rem;
+}
+
+.nav-item > a {
+  text-decoration: none;
+  color: white;
+}
+
+address {
+  font-style: normal;
+}
+
+small,
+address p,
+address p > strong {
+  font-weight: 600;
+  font-size: 1.2rem;
+}
+
+/*===============
+Layout
+=================*/
+
+/* Header */
+
+header {
+  display: flex;
+  flex-direction: column;
+  border-bottom: 1px solid white;
+  position: fixed;
+  width: 100%;
+  background: black;
+  z-index: 999;
+}
+
+.page-title {
+  width: 50%;
+  max-width: 50%;
+  margin: 0 auto;
+}
+
+.menu-btn,
+.menu-close-btn {
+  height: 70px;
+  width: 70px;
+  position: absolute;
+  top: 60%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  cursor: pointer;
+}
+
+.menu-btn:hover,
+.menu-close-btn:hover {
+  height: 75px;
+  width: 75px;
+  transition: width 0.3s, height 0.3s;
+}
+
+.menu-btn > div,
+.menu-close-btn > div {
+  width: 100%;
+  height: 10px;
+  background-color: white;
+  margin: 10px 0;
+  border-radius: 10px;
+}
+
+.menu-close-btn {
+  top: 80%;
+  left: 70%;
+  visibility: hidden;
+}
+
+.menu-close-btn-stripe-1 {
+  transform: rotate(45deg);
+}
+
+.menu-close-btn-stripe-2 {
+  position: relative;
+  bottom: 0.9em;
+  transform: rotate(-45deg);
+}
+
+.nav-bar {
+  visibility: hidden;
+  margin: 0 auto;
+}
+
+.nav-bar-ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.nav-item a {
+  display: block;
+  margin: 0 auto;
+}
+
+.nav-item a:hover,
+.nav-item a:active {
+  color: #087990;
+  text-decoration: underline;
+}
+
+/* Main content */
+
+main {
+  position: relative;
+  top: 4em;
+}
+
+.section-1 {
+  height: 80vh;
+  padding-top: 5em;
+  background-image: url(https://i.imgur.com/NuuHhZL.jpeg);
+  background-position: center top;
+  background-size: 350% 160%;
+}
+
+.section-1-content {
+  background: rgba(0, 0, 0, 0.4);
+  margin: 0 auto;
+  padding-top: 1.5em;
+}
+
+.section-2 {
+  padding-top: 2em;
+}
+
+.section-2-info {
+  padding-bottom: 1em;
+}
+
+.section-2-grid-item {
+  margin: auto;
+}
+.section-2-grid-item-img {
+  margin: auto;
+  width: 60%;
+}
+
+.section-2-grid-item-cap {
+  padding: 1em 0;
+}
+
+.section-3 {
+  padding-top: 2em;
+}
+
+.section-3-location {
+  background: rgba(0, 0, 0, 0.4);
+  width: 50%;
+  margin: 0 auto;
+  margin-bottom: 1em;
+}
+
+.section-3-location-city,
+.section-3-location-name,
+.section-3-location-address,
+.section-3-location-postal-code {
+  padding-bottom: 1.5em;
+}
+
+.section-3-location-city {
+  padding-top: 1.5em;
+}
+
+.section-3-img-container {
+  background-image: url("https://i.imgur.com/ME2WNoD.jpeg");
+  background-position: center;
+  background-size: cover;
+}
+
+/* Footer */
+
+footer {
+  position: relative;
+  top: 3em;
+  border-top: 1px solid white;
+}
+
+.footer-copyright {
+  display: block;
+  padding-bottom: 1em;
+  padding-top: 0.3em;
+}
+
+.footer-contact-address-info-container {
+  display: flex;
+  justify-content: space-around;
+  padding: 0 1em;
+  max-width: 550px;
+  margin: 0 auto;
+}
+
+@media (min-width: 800px) {
+  /*===============
+Typography
+=================*/
+
+  body {
+    font-size: 1.2rem;
+  }
+
+  h2 {
+    font-size: 2rem;
+  }
+
+  .nav-item a {
+    font-family: "Times New Roman", sans-serif;
+  }
+
+  small,
+  address p,
+  address p > strong {
+    font-size: 1rem;
+  }
+
+  /*===============
+Layout
+=================*/
+
+  /* Header */
+
+  header {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .page-title {
+    width: 10em;
+    max-width: 10em;
+    height: 3em;
+    margin: initial;
+    padding: 0.7em 0;
+  }
+
+  .menu-btn,
+  .menu-close-btn {
+    visibility: hidden !important;
+  }
+
+  .nav-bar {
+    visibility: visible !important;
+    padding: 0.7em 0;
+    margin: 0;
+  }
+
+  .nav-bar-ul {
+    display: flex;
+  }
+
+  .nav-item {
+    padding-right: 1em;
+  }
+
+  /* Main content */
+
+  .section-1 {
+    background-image: url(https://i.imgur.com/NuuHhZL.jpeg);
+    background-size: contain;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    width: 80%;
+    margin: 0 auto;
+  }
+
+  .section-1-content {
+    padding: 1.5em 0 0.3em 0;
+    width: 75%;
+    position: relative;
+    top: 11em;
+  }
+
+  .section-2-grid {
+    display: grid;
+    justify-content: center;
+    grid-template-columns: 200px 200px 200px;
+    grid-template-rows: auto auto;
+    grid-gap: 0.8em;
+  }
+
+  .section-2-grid-item {
+    margin: 0;
+    width: 200px;
+  }
+  .section-2-grid-item-img {
+    margin: auto;
+    width: 100%;
+  }
+
+  .section-3 {
+    background-image: url("https://i.imgur.com/ME2WNoD.jpeg");
+    background-size: 100% 65%;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: 120% 100%;
+    width: 70%;
+    /* height: 70vh; */
+    margin: 0 auto;
+  }
+
+  .section-3-title {
+    background: rgba(0, 0, 0, 0.4);
+    margin-top: 3em;
+  }
+
+  .section-3-media-query-container {
+    display: flex;
+    height: auto;
+    justify-content: center;
+  }
+
+  .section-3-location-first {
+    width: 23%;
+    margin: 0 0.8em 0 0;
+    margin-bottom: 1em;
+  }
+
+  .section-3-img-container {
+    background-image: none;
+    display: flex;
+    gap: 0.8em;
+    height: auto;
+    width: 46%;
+  }
+
+  .section-3-img-container > .section-3-location {
+    background: rgba(0, 0, 0, 0.4);
+    width: 50%;
+    margin-bottom: 1em;
+  }
+
+  /* Footer */
+  footer {
+    display: flex;
+    border-top: 1px solid white;
+    padding-top: 1em;
+    top: 4em;
+  }
+
+  .footer-copyright {
+    width: 25%;
+  }
+
+  .footer-contact {
+    width: 75%;
+    display: flex;
+  }
+
+  .footer-contact-address-info-container {
+    width: 66.666%;
+    max-width: initial;
+    padding: 0;
+    margin: 0;
+  }
+
+  .footer-contact-company-name,
+  .footer-contact-mail-address {
+    width: 50%;
+  }
+
+  .footer-contact-phone {
+    width: 33.333%;
+  }
+}
